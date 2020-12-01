@@ -9,7 +9,6 @@ def emojify(text: str, position='after'):
     for i, word in enumerate(words):
         for emoji in emoji_map:
             if word.lower() in emoji_map[emoji]:
-                print(word, i)
                 if position == 'after':
                     words[i] = f'{word} {emoji}'
                 elif position == 'before':
