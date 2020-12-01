@@ -5,6 +5,7 @@ with open('emojimap.json', encoding='utf-8') as f:
 
 
 def emojify(text: str, position='after'):
+    emojified_lines = []
     lines = text.split('\n')
     for i, line in enumerate(lines):
         words = line.split()
@@ -16,5 +17,5 @@ def emojify(text: str, position='after'):
                     elif position == 'before':
                         words[i] = f'{emoji} {word}'
                     break
-        lines[i] = ' '.join(words)
-    return '\n'.join(lines)
+        emojified_lines.append(' '.join(words))
+    return '\n'.join(emojified_lines)
