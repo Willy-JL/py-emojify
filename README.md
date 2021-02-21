@@ -24,5 +24,5 @@ emojified = emojify(text, position='before')
 print(emojified)
 ```
 
-### Thanks:
+### Credits:
  Thanks to me4502's [Emojify](https://matthewmiller.dev/experiments/emojify/) ([GitHub](https://github.com/me4502/Emojify)) for the [Emoji Map](https://github.com/me4502/Emojify/blob/master/src/emojiMap.json)
